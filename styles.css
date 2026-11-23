@@ -362,6 +362,34 @@ dialog::backdrop { background: #142219a8; }
 .offer-list { padding-left: 1.17rem; margin-block: 1rem; max-width: 38rem; }
 .offer-list li + li { margin-top: .35rem; }
 .offer-status { margin: .85rem 0 .65rem; }
+.hero-bonus-link {
+  display: inline-block;
+  margin-top: .45rem;
+  color: var(--ink);
+  font-size: .95rem;
+  font-weight: 600;
+  text-underline-offset: .26em;
+}
+.hero-bonus-link span { margin-inline-start: .3em; }
+.bonus { background: #e9e9dd; }
+.bonus .section-head p { max-width: 21rem; }
+.bonus-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.bonus-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: .55rem;
+  background: #fffcf5;
+}
+.bonus-card img { width: 100%; height: auto; aspect-ratio: 680 / 426; object-fit: cover; }
+.bonus-card-copy { padding: clamp(1.25rem, 3vw, 2.1rem); }
+.bonus-card h3 { font: clamp(1.7rem, 3vw, 2.4rem)/1.08 var(--serif); color: var(--ink); }
+.bonus-card ul { margin: .8rem 0 0; padding-inline-start: 1.15rem; color: var(--muted); }
+.bonus-card li + li { margin-top: .38rem; }
+.bonus-cta { margin-top: 1.45rem; }
+@media (max-width: 40rem) {
+  .bonus-grid { grid-template-columns: minmax(0, 1fr); }
+}
 #dialog-meta { margin-bottom: .25rem; }
 #dialog-nutrition { margin-bottom: 1.2rem; }
 .dialog-book { display: inline-block; margin-top: 1.2rem; }
